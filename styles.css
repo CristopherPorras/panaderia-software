@@ -1,0 +1,363 @@
+/* Importación de fuente externa */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+
+/* Estilos generales aplicados a todos los elementos */
+* {
+    font-family: "Signika Negative", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    width: 100%;
+    height: 100vh;
+    background: #ffdfcd;
+}
+
+.navbar{
+    align-content: center;
+    text-align: center;
+    background: black;
+    color: white;
+    border: 15px solid black;
+    word-spacing: 10px;
+    font-size: 35px;
+}
+
+
+/* Contenedor principal que incluye los divs de izquierda y derecha */
+.container {
+    width: 100%;
+    height: 90%;
+    display: flex; /* Flexbox para alinear los hijos en fila */
+    background: black;
+}
+
+/* Estilo de la sección izquierda */
+.left-content {
+    width: 50%;  /* Ocupa la mitad del contenedor */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffdfcd;
+    image-rendering: auto;
+}
+
+/* Estilo de la sección derecha (formulario de inicio de sesión) */
+.container-form {
+    width: 50%;  /* Ocupa la mitad del contenedor */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: #ffdfcd;
+    margin: 0 auto
+}
+
+/* Estilo para los formularios dentro del contenedor */
+.sign-in {
+    padding: 1%;
+}
+
+/* Estilo del botón que contiene la imagen */
+.image-button {
+    border: none; 
+    background: none; 
+    cursor: pointer; 
+    margin: 0 auto
+}
+
+/* Estilo de la imagen dentro del botón */
+.image-button img {
+
+    width: 150px; /* Ajusta el ancho de la imagen */
+    height: auto; /* La altura se ajustará proporcionalmente */
+    display: block; /* Elimina espacios en blanco alrededor de la imagen */
+    margin-top: 20px; /* Espacio encima de la imagen */
+}
+
+/* Efecto hover para la imagen */
+.image-button img:hover {
+    opacity: 0.8; 
+}
+
+/* Estilo del título dentro del formulario */
+.container-form h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor para los campos de entrada (usuario y contraseña) */
+.container-input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    background-color: #ffffff;
+    margin: 0 auto
+}
+
+/* Estilo de los campos de entrada */
+.container-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    margin: 0 auto
+}
+
+#ramita {
+    position: relative; /* Posiciona el elemento relativo a su posición normal en el flujo del documento */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 10px auto; /* Centro horizontalmente con un pequeño margen superior e inferior */
+    width: 100px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+}
+
+.ttsecundario {
+    margin: 11px; /* Ajusta el margen según tus necesidades */
+    border: 7px solid #fff8f1; /* Ajusta el grosor y el color del borde aquí */
+    background-color: #fff8f1;
+    align-items: center;
+    text-align: center;
+    border-radius: 230px; /* Ajusta el valor según el nivel de redondez que desees */
+}
+
+
+/* Estilo para el contenedor del icono */
+.container-icon {
+    position: absolute; /* Permite colocar el icono en una posición específica dentro del contenedor */
+    top: 10px; /* Ajusta la posición superior del icono */
+    left: 10px; /* Ajusta la posición izquierda del icono */
+    padding: 10px; /* Ajusta el espaciado alrededor del icono */
+    font-size: 48px; /* Ajusta el tamaño del icono */
+    display: inline-block; /* Alinea el icono en línea */
+
+}
+
+/* Estilo específico para el icono dentro del enlace */
+.container-icon a {
+    color: inherit; /* Hereda el color del contenedor para mantener el color original del icono */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.container-icon a ion-icon {
+    color: inherit; /* Asegura que el icono herede el color del enlace */
+}
+
+/* Estilo opcional para el estado hover */
+.container-icon a:hover {
+    opacity: 0.8; /* Reduce la opacidad en estado hover */
+}
+
+/* Estilo para el contenedor principal */
+.contenedor-principal {
+    display: grid; /* Utiliza CSS Grid para la disposición de las casillas */
+    grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual tamaño */
+    grid-gap: 20px; /* Espaciado entre las casillas */
+    padding: 150px; /* Reduce el padding para ajustarlo a un tamaño más cuadrado */
+    justify-content: center; /* Centra las casillas horizontalmente */
+    align-items: center; /* Alinea las casillas verticalmente */
+    background-color: #ffdfcd; /* Color de fondo del contenedor principal */
+}
+
+/* Estilo para cada casilla */
+.casilla {
+    background-color: #7ba68c; /* Color de fondo de cada casilla */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    border-radius: 25px; /* Bordes redondeados más pronunciados */
+    padding: 40px; /* Ajusta el padding para mantener un aspecto cuadrado */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de elevación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+
+.contenedor-secundario {
+    display: grid; /* Utiliza CSS Grid para la disposición de las casillas */
+    grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual tamaño */
+    grid-gap: 20px; /* Espaciado entre las casillas */
+    padding: 20px; /* Reduce el padding para ajustarlo a un tamaño más cuadrado */
+    justify-content: center; /* Centra las casillas horizontalmente */
+    align-items: center; /* Alinea las casillas verticalmente */
+    background-color: #ffdfcd; /* Color de fondo del contenedor principal */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilo para la casilla de pedidos */
+.pedidos {
+    background-color: #7ba68c; /* Color de fondo de cada casilla */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    border-radius: 25px; /* Bordes redondeados más pronunciados */
+    padding: 40px; /* Ajusta el padding para mantener un aspecto cuadrado */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de elevación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+
+}
+
+
+
+    
+
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        grid-template-columns: 1fr; /* Una columna en pantallas más pequeñas */
+    }
+}
+
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #ffdfcd;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.Psub-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sub-info {
+    margin-bottom: 20px;
+}
+
+.sub-info h2 {
+    font-size: 30px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Hace que las letras sean más gruesas */
+    color: #333;
+    margin: 0;
+}
+
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inf2 {
+    margin-bottom: 20px;
+    background-color: #d8d8d8;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.inf2 input {
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    outline: none;
+}
+
+.pimage {
+    display: flex;
+    justify-content: center;
+}
+
+.pimage img {
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+
+.totales {
+    width: 98%; /* Ancho del contenedor */
+    max-width: 1200px; /* Ancho máximo */
+    background: black; /* Fondo negro */
+    margin: 0 auto; /* Elimina margen superior/inferior y centra horizontalmente */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+}
+
+.titulos-barra {
+    display: flex; /* Alinea elementos en una fila */
+    justify-content: space-between; /* Distribuye espacio igual entre elementos */
+    padding: 10px 0; /* Padding superior e inferior */
+}
+
+.titulos2 {
+    flex: 1; /* Distribuye equitativamente los elementos */
+    text-align: center; /* Centra el texto en cada columna */
+}
+
+.titulos-barra h2 {
+    color: white; /* Color del texto blanco */
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+}
+
+.pinfobarra {
+    width: 98%; /* Ancho del contenedor */
+    max-width: 1200px; /* Ancho máximo */
+    background: white; /* Fondo blanco */
+    margin: 0 auto; /* Elimina margen superior/inferior y centra horizontalmente */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho total */
+}
+
+.infobarra {
+    display: flex; /* Alinea elementos en una fila */
+    justify-content: space-between; /* Distribuye espacio igual entre elementos */
+    padding: 10px 0; /* Padding superior e inferior */
+}
+
+.infobarra2 {
+    flex: 1; /* Distribuye equitativamente los elementos */
+    text-align: center; /* Centra el texto en cada columna */
+}
+
+.infobarra h2 {
+    color: black; /* Color del texto */
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+}
+
+.ptotalbarra {
+    width: 98%; /* Ancho del contenedor */
+    max-width: 1200px; /* Ancho máximo */
+    background: #a7ddbd; /* Fondo blanco */
+    margin: 0 auto; /* Elimina margen superior/inferior y centra horizontalmente */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho total */
+}
+
+.totalbarra {
+    display: flex; /* Alinea elementos en una fila */
+    justify-content: space-between; /* Distribuye espacio igual entre elementos */
+    padding: 10px 0; /* Padding superior e inferior */
+}
+
+.tbarra {
+    flex: 1; /* Distribuye equitativamente los elementos */
+    text-align: center; /* Centra el texto en cada columna */
+}
+
+.totalbarra h2 {
+    color: black; /* Color del texto */
+    margin: 0; /* Elimina el margen predeterminado del h2 */
+}
+
+
+
+
+
