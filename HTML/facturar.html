@@ -49,46 +49,53 @@
             </div>
         </div>
     
-        <!-- Sección de totales -->
-        <div class="totales">
-            <!-- Barra de títulos de totales -->
-            <div class="titulos-barra">
-                <div class="titulos2"><h2>Código del Artículo</h2></div>
-                <div class="titulos2"><h2>Descripción</h2></div>
-                <div class="titulos2"><h2>Cantidad</h2></div>
-                <div class="titulos2"><h2>Precio Unitario</h2></div>
-                <div class="titulos2"><h2>Total</h2></div>
-            </div>
-        </div>
-        
-        <!-- Información de la barra -->
-        <div class="pinfobarra">
-            <div class="infobarra">
-                <div class="infobarra2"><h2>#</h2></div>
-                <div class="infobarra2"><h2>#</h2></div>
-                <div class="infobarra2"><h2>#</h2></div>
-                <div class="infobarra2"><h2>#</h2></div>
-                <div class="infobarra2"><h2>#</h2></div>
-                <div class="infobarra2"><h2>Borrar</h2></div>
-            </div>
-        </div>    
-        
-        <!-- Sección de total final -->
-        <div class="ptotalbarra">
-            <div class="totalbarra">
-                <div class="tbarra"><h2>Total:</h2></div>
-                <div class="tbarra"><h2>#</h2></div>
-            </div>    
+        <div class="contenedor-tabla">
+            <table class="factura-tabla">
+                <thead>
+                    <tr>
+                        <th>Código De Artículo</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Total</th>
+                        <th></th> <!-- Columna para el botón de borrar -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12</td>
+                        <td>croissant</td>
+                        <td>2</td>
+                        <td>1.500</td>
+                        <td>3.000</td>
+                        <td><button class="btn-borrar">Borrar</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>hojaldre</td>
+                        <td>10</td>
+                        <td>500</td>
+                        <td>5.000</td>
+                        <td><button class="btn-borrar">Borrar</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Importe Total:</td>
+                        <td>8.000</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
     
-        <!-- Botones de acción -->
         <div class="terminar">
-            <div class="term"><h2>Agregar Producto</h2></div>
-            <div class="term"><h2>Terminar Factura</h2></div>
+            <button class="btn-accion">Agregar Producto</button>
+            <button class="btn-accion">Terminar Factura</button>
         </div>
-    </div>
     
-
+    </body>
+    </html>
 
 
 
